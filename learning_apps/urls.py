@@ -1,9 +1,11 @@
-"""Defines URL patterns for learning_apps."""
+"""Defines url patterns for learning_apps."""
 
-from django.conf.urls import url
+from django.urls import path
 
 from . import views
 
+app_name = 'learning_logs'
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    # Home page.
+    path('', views.index, name='index'),
 ]
