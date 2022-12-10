@@ -9,9 +9,13 @@
         <a href="{% url 'learning_apps:topic' topic.id %}">{{ topic }}</a>
         </li>
     <li>{{ topic }}</li>
+
     {% empty %}
+
     <li>No topics have been added yet.</li>
+
     {% endfor %}
+
 </ul>
 
 {% endblock content %}
@@ -22,7 +26,9 @@
 {% block content %}
 
 <p>Topic: {{ topic }}</p>
+
 <p>Entries:</p>
+
 <ul>
     {% for entry in entries %}
     <li>
