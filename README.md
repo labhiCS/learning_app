@@ -77,3 +77,11 @@ First web application using Django
 * For colorization of commandline output
 
     `$ git config --global color.ui auto`
+
+* To see running networkstatus.
+
+    `$ sudo netstat -lpn`
+
+* To kill the running tab(program).
+
+    `$ kill -9 <PID/Program name>`
